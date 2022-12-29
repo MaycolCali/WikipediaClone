@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/wikipedia-logo.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/7c35a4ac6f.js" crossorigin="anonymous"></script>
+    <title>Wikipedia</title>
+</head>
+<body>
+    <main class="principal">
+        <section class="section-principal">
+            <div class="contenido-superior">
+                <figure class="wikipedia-figura">
+                    <img class="wikipedia-figura-imagen" src="./assets/wikipedia-logo-text.png" alt="Wikipedia">
+                </figure>
+                <strong class="wikipedia-slogan">La enciclopedia libre</strong>
+            </div>
+
+
+            <div class="contenido-central">
+                <div class="contenido-central_lang contenido-central_lang-1">
+                    <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">
+                        <strong class="contenido-central_lenguaje">Español</strong>
+                        <small class="contenido-central_descripcion">1 679 000+ artículos</small>
+                    </a>
+                </div>
+
+                <div class="contenido-central_lang contenido-central_lang-2">
+                    <a href="https://en.wikipedia.org/wiki/Main_Page">
+                        <strong class="contenido-central_lenguaje">English</strong>
+                        <small class="contenido-central_descripcion">6 291 000+ articles</small>
+                    </a>
+                </div>
+
+                <div class="contenido-central_lang contenido-central_lang-3">
+                    <a href="https://ja.wikipedia.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8">
+                        <strong class="contenido-central_lenguaje">日本語</strong>
+                        <small class="contenido-central_descripcion">1 266 000+ 記事</small>
+                    </a>
+                </div>
+
+                <div class="contenido-central_lang contenido-central_lang-4">
+                    <a href="https://de.wikipedia.org/wiki/Wikipedia:Hauptseite">
+                        <strong class="contenido-central_lenguaje">Deutsch</strong>
+                        <small class="contenido-central_descripcion">2 571 000+ Artikel</small>
+                    </a>
+                </div>
+
+                <div class="contenido-central_lang contenido-central_lang-5">
+                    <a href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal">
+                        <strong class="contenido-central_lenguaje">Français</strong>
+                        <small class="contenido-central_descripcion">2 324 000+ articles</small>
+                    </a>
+                </div>
+
+                <div class="contenido-central_lang contenido-central_lang-6">
+                    <a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">
+                        <strong class="contenido-central_lenguaje">Русский</strong>
+                        <small class="contenido-central_descripcion">1 720 000+ статей</small>
+                    </a>
+                </div>
+
+                <div class="contenido-central_lang contenido-central_lang-7">
+                    <a href="https://it.wikipedia.org/wiki/Pagina_principale">
+                        <strong class="contenido-central_lenguaje">Italiano</strong>
+                        <small class="contenido-central_descripcion">1 690 000+ voci</small>
+                    </a>
+                </div>
+
+                <div class="contenido-central_lang contenido-central_lang-8">
+                    <a href="https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5">
+                        <strong class="contenido-central_lenguaje">中文</strong>
+                        <small class="contenido-central_descripcion">1 194 000+ <data-convert-hans data-convert-hans="條目" id="zh_art">條目</data-convert-hans></small>
+                    </a>
+                </div>
+
+                <div class="contenido-central_lang contenido-central_lang-9">
+                    <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal">
+                        <strong class="contenido-central_lenguaje">Português</strong>
+                        <small class="contenido-central_descripcion">1 055 000+ artigos</small>
+                    </a>
+                </div>
+
+                <div class="contenido-central_lang contenido-central_lang-10">
+                    <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal">
+                        <strong class="contenido-central_lenguaje">Polski</strong>
+                        <small class="contenido-central_descripcion">1 471 000+ hasel</small>
+                    </a>
+                </div>
+            </div>
+
+
+            <fieldset class="caja-buscador">
+                <div class="buscador">
+                    <input type="text" class="buscador-texto">
+
+                    <div class="abrir-lenguajes">
+                        <label for="buscarLenguaje" id="jsBuscarLenguaje" class="mostrar-lenguaje">ES</label>
+                        <span class="icono"><i class="fas fa-angle-down"></i></span>
+                    </div>
+
+                    <select name="lenguaje" id="buscarLenguaje" class="seleccionar-idioma">
+                        <option value="es" lang="es" class="selected">Español</option>
+                        <option value="en" lang="en">English</option>
+                        <option value="it" lang="it">Italiano</option>
+                        <option value="fr" lang="fr">Français</option>
+                    </select>
+                </div>
+                <button type="button" id="botonCambiador" class="boton-buscar"><i class="icon-lupa fas fa-search"></i></button>
+            </fieldset>
+
+            <section class="container-boton-idiomas">
+                <button class="boton-idiomas">
+                    <i class="boton-idiomas_lang fas fa-languaje"></i>
+                    <span class="boton-idiomas_texto">Leer Wikipedia en tu idioma</span>
+                    <i class="boton-idiomas_flecha fas fa-angle-down"></i>
+                </button>
+                <hr class="lang-list_border">
+            </section>
+        </section>
+    </main>
+
+
+    <hr class="separador">
+
+
+    <footer class="footer">
+        <div class="footer-contenido">
+
+            <div class="footer-fundacion">
+                <figure class="footer-fundacion_icono"> 
+                    <img src="./assets/wikimedia.png" alt="Fundación Wikipedia" class="footer-fundacion_icono-imagen">
+                </figure>
+                <span class="footer-fudacion_descripcion">
+                    Wikipedia es alojada por la Fundación Wikipedia, una organización sin fines de lucro que también alberga una gama de otros proyectos.
+                </span>
+            </div>
+
+            <div class="footer-aplicacion">
+                <figure class="footer-aplicacion_icono"> 
+                    <img src="./assets/wikipedia-favicon.png" alt="Descargar Wikipedia" class="footer-aplicacion_icono-imagen">
+                </figure>
+
+                <article class="aplicacion">
+                    <h2 class="aplicacion_titulo">Descargar Wikipedia para Android o iOS</h2>
+                    <p class="aplicacion_descripcion">Guarda tus artículos favoritos para leerlos sin conexión, sincroniza tus listas de lectura en varios dispositivos y personaliza tu experiencia de lectura con la aplicación oficial de Wikipedia</p>
+
+                    <div class="botones-descarga">
+                        <figure class="botones_google-play">
+                            <a href="https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob">
+                                <img src="./assets/google-play-badge.png" alt="Descargar en Google Play" class="botones-descarga_imagen">
+                            </a>
+                        </figure>
+                        <figure class="botones_app-store">
+                            <a href="https://apps.apple.com/app/apple-store/id324715238">
+                                <img src="./assets/\app-store-badge.svg" alt="Descargar en App Store" class="botones-descarga_imagen">
+                            </a>
+                        </figure>
+                    </div>
+                </article>
+            </div>
+
+            <div class="otro-proyecto proyecto1">
+                <a class="otro-proyecto" href="https://commons.wikimedia.org/wiki/Main_Page">
+                   <figure class="otro-proyecto_icono"> 
+                        <img src="./assets/wikipedia-commons.svg" alt="Icono" class="otro-proyecto_icono-imagen">
+                   </figure> 
+                   <section class="proyecto">
+                        <h2 class="proyecto_titulo">Commons</h2>
+                        <p class="proyecto_descripcion">Fotos libremente utilizables y más</p>
+                   </section>
+                </a>
+            </div>
+
+            <div class="otro-proyecto proyecto2">
+                <a class="otro-proyecto" href="https://www.wikivoyage.org/">
+                   <figure class="otro-proyecto_icono"> 
+                        <img src="./assets/wikivoyage.svg" alt="Icono" class="otro-proyecto_icono-imagen">
+                   </figure> 
+                   <section class="proyecto">
+                        <h2 class="proyecto_titulo">Wikiviajes</h2>
+                        <p class="proyecto_descripcion">La guía de viajes libre</p>
+                   </section>
+                </a>
+            </div>
+
+            <div class="otro-proyecto proyecto3">
+                <a class="otro-proyecto" href="https://www.wiktionary.org/">
+                   <figure class="otro-proyecto_icono"> 
+                        <img src="./assets/\1024px-Wiktfavicon_en.svg.png" alt="Icono" class="otro-proyecto_icono-imagen">
+                   </figure> 
+                   <section class="proyecto">
+                        <h2 class="proyecto_titulo">Wikcionario</h2>
+                        <p class="proyecto_descripcion">El diccionario libre</p>
+                   </section>
+                </a>
+            </div>
+
+            <div class="otro-proyecto proyecto4">
+                <a class="otro-proyecto" href="https://www.wikibooks.org/">
+                   <figure class="otro-proyecto_icono"> 
+                        <img src="./assets/wikibooks.svg" alt="Icono" class="otro-proyecto_icono-imagen">
+                   </figure> 
+                   <section class="proyecto">
+                        <h2 class="proyecto_titulo">Wikilibros</h2>
+                        <p class="proyecto_descripcion">Libros de contenido libre</p>
+                   </section>
+                </a>
+            </div>
+
+            <div class="otro-proyecto proyecto5">
+                <a class="otro-proyecto" href="https://www.wikinews.org/">
+                   <figure class="otro-proyecto_icono"> 
+                        <img src="./assets/wikinews.svg" alt="Icono" class="otro-proyecto_icono-imagen">
+                   </figure> 
+                   <section class="proyecto">
+                        <h2 class="proyecto_titulo">Wikinoticias</h2>
+                        <p class="proyecto_descripcion">La fuente de noticias libres</p>
+                   </section>
+                </a>
+            </div>
+
+            <div class="otro-proyecto proyecto6">
+                <a class="otro-proyecto" href="https://www.wikidata.org/wiki/Wikidata:Main_Page">
+                   <figure class="otro-proyecto_icono"> 
+                        <img src="./assets/wikidata.svg" alt="Icono" class="otro-proyecto_icono-imagen">
+                   </figure> 
+                   <section class="proyecto">
+                        <h2 class="proyecto_titulo">Wikidata</h2>
+                        <p class="proyecto_descripcion">Base de conocimiento libre</p>
+                   </section>
+                </a>
+            </div>
+
+            <div class="otro-proyecto proyecto7">
+                <a class="otro-proyecto" href="https://www.wikiversity.org/">
+                   <figure class="otro-proyecto_icono"> 
+                        <img src="./assets/wikiversity.svg" alt="Icono" class="otro-proyecto_icono-imagen">
+                   </figure> 
+                   <section class="proyecto">
+                        <h2 class="proyecto_titulo">Wikiversidad</h2>
+                        <p class="proyecto_descripcion">Plataforma educativa libre</p>
+                   </section>
+                </a>
+            </div>
+
+            <div class="otro-proyecto proyecto8">
+                <a class="otro-proyecto" href="https://www.wikiquote.org/">
+                   <figure class="otro-proyecto_icono"> 
+                        <img src="./assets/wikiquote.svg" alt="Icono" class="otro-proyecto_icono-imagen">
+                   </figure> 
+                   <section class="proyecto">
+                        <h2 class="proyecto_titulo">Wikiquote</h2>
+                        <p class="proyecto_descripcion">La colección de citas</p>
+                   </section>
+                </a>
+            </div>
+
+            <div class="otro-proyecto proyecto9">
+                <a class="otro-proyecto" href="https://www.mediawiki.org/wiki/MediaWiki">
+                   <figure class="otro-proyecto_icono"> 
+                        <img src="./assets/mediawiki.svg" alt="Icono" class="otro-proyecto_icono-imagen">
+                   </figure> 
+                   <section class="proyecto">
+                        <h2 class="proyecto_titulo">MediaWiki</h2>
+                        <p class="proyecto_descripcion">Aplicación wiki libre y abierta</p>
+                   </section>
+                </a>
+            </div>
+
+            <div class="otro-proyecto proyecto10">
+                <a class="otro-proyecto" href="https://wikisource.org/wiki/Main_Page">
+                   <figure class="otro-proyecto_icono"> 
+                        <img src="./assets/wikisource.svg" alt="Icono" class="otro-proyecto_icono-imagen">
+                   </figure> 
+                   <section class="proyecto">
+                        <h2 class="proyecto_titulo">Wikisource</h2>
+                        <p class="proyecto_descripcion">La biblioteca libre</p>
+                   </section>
+                </a>
+            </div>
+
+            <div class="otro-proyecto proyecto11">
+                <a class="otro-proyecto" href="https://species.wikimedia.org/wiki/Main_Page">
+                   <figure class="otro-proyecto_icono"> 
+                        <img src="./assets/wikispecies.svg" alt="Icono" class="otro-proyecto_icono-imagen">
+                   </figure> 
+                   <section class="proyecto">
+                        <h2 class="proyecto_titulo">Wikispecies</h2>
+                        <p class="proyecto_descripcion">Directorio de especies libre</p>
+                   </section>
+                </a>
+            </div>
+
+            <div class="otro-proyecto proyecto12">
+                <a class="otro-proyecto" href="https://meta.wikimedia.org/wiki/Main_Page">
+                   <figure class="otro-proyecto_icono"> 
+                        <img src="./assets/wiki-meta.svg" alt="Icono" class="otro-proyecto_icono-imagen">
+                   </figure> 
+                   <section class="proyecto">
+                        <h2 class="proyecto_titulo">Meta-Wiki</h2>
+                        <p class="proyecto_descripcion">Coordinación y documentación comunitaria</p>
+                   </section>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <hr class="separador2">
+
+    <p class="site-licence">
+        <small class="site-licence_licence">Esta página está disponible bajo la 
+            <a class="site-licence_licence-link" href="https://creativecommons.org/licenses/by-sa/3.0/">licencia Creative Commons Atribución-CompartirIgual</a>
+        </small>
+
+        <small class="site-licence_terms">
+            <a href="https://meta.wikimedia.org/wiki/Terms_of_use/es"> • Terminos de uso</a>
+        </small>
+
+        <small class="site-licence_Privacy-Policy">
+            <a href="https://meta.wikimedia.org/wiki/Privacy_policy/es"> • Normativa de Privacidad</a>
+        </small>
+    </p>
+</body>
+</html>
