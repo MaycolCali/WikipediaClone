@@ -1,0 +1,12 @@
+@media(max-width: 480px){
+    .contenido_superior{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .middle img{
+        position: absolute;
+        width: 6.5rem;
+        top: 12vw;
+        left: 17vw;
+    }
+}
