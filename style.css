@@ -59,6 +59,28 @@ a{
     line-height: 3.5rem; /*Interlineado*/
 }
 
+.contenido-central{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 580px;
+
+}
+.contenido-central_lang-1{
+    transform: translateX(10%);
+}
+.contenido-central_lang-2{
+    transform: translateX(70%);
+}
+.contenido-central_lang-6{
+    transform: translateX(20%);
+}
+.contenido-central_lang-8{
+    transform: translateX(20%);
+}
+.contenido-central_lang-10{
+    transform: translateX(70%);
+}
 
 /*.contenido-central{
     width: 54.6rem;
