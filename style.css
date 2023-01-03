@@ -39,18 +39,19 @@ a{
 }
 
 .contenido-superior{
-    width: 27rem;
+    width: auto;
     height: 9rem;
-    margin: 4rem auto .5rem;  /*x, y, separacion con el contenido de abajo*/
+    margin: 2rem 0 0;  /*x, y, separacion con el contenido de abajo*/
     display: flex;
-    flex-direction: column; /*Para que sea un elemento de bloque*/
     justify-content: center;
     align-items: center;
 }
-
-.wikipedia-figura{
+.logoWik{
+    display: none; /*Para ponerlo invisible*/
+}
+.slognas{
+    display: inline-block;
     width: 17rem;
-    height: 3rem;
 }
 
 .wikipedia-figura-imagen{
@@ -87,6 +88,11 @@ a{
     transform: translateX(70%);
 }
 
+.middle img{
+    width: 20em;
+    height: auto;
+}
+
 .contenido-central_lang-2{
     transform: translateX(-70%);
 }
@@ -102,10 +108,7 @@ a{
 .contenido-central_lang-9{
     transform: translateX(-70%);
 }
-.middle img{
-    width: 20rem;
-    height: auto;
-}
+
 .contenido-central_lang{
     margin: 1.4rem 0;
     padding: .2rem 1rem;
@@ -626,15 +629,5 @@ a{
 @media(max-width: 600px) {
     .footer-aplicacion {
         padding: 1rem 0;
-    }
-}
-
-@media(max-width: 546px) {
-    .contenido-central {
-        width: auto;
-    }
-
-    .caja-buscador {
-        width: auto;
     }
 }
