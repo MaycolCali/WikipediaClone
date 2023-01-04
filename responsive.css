@@ -1,6 +1,7 @@
 @media(max-width: 480px){
     .contenido-superior{
         width: auto;
+        min-width: 100%;
         height: 9rem;
         margin: 2rem 0 0;  /*x, y, separacion con el contenido de abajo*/
         display: flex;
@@ -29,8 +30,31 @@
         line-height: 2.5rem; /*Interlineado*/
     }
     .contenido-central{
-        order: 2;
-        
+        width: auto;
+        height: auto;
+        margin-top: 7rem;
+        font-size: 1.3rem;
+        text-align: left;  
+        display: block;    
+        padding: 0 2.5em; 
+        display: block;
+        text-align: center;
+        justify-content: center;
+    }
+    .contenido-central_lang{
+        display: block;
+        flex-wrap: wrap;
+        float: left;
+        position: relative;
+        top: 0;
+        left: auto;
+        right: auto;
+        box-sizing: border-box;
+        height: 6.4rem;
+        width: 33%;
+        margin: 0 0 16px;
+        padding: 0 1.6rem;
+        text-align: center;
     }
     .middle{
         display: none;
