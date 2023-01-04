@@ -1,3 +1,19 @@
+@media(max-width: 550px){
+    .contenido-central{
+        width: 42rem;
+    }
+    .middle img{
+        width: 18em;
+    }
+    .contenido-central_lenguaje{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    .contenido-central_descripcion{
+        font-size: 1.2rem;
+    }
+}
 @media(max-width: 480px){
     .contenido-superior{
         width: auto;
@@ -37,9 +53,6 @@
         text-align: left;  
         display: block;    
         padding: 0 2.5em; 
-        display: block;
-        text-align: center;
-        justify-content: center;
     }
     .contenido-central_lang{
         display: block;
