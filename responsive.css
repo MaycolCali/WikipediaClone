@@ -13,6 +13,9 @@
     .contenido-central_descripcion{
         font-size: 1.2rem;
     }
+    .caja-buscador{
+        width: 80%;
+    }
 }
 @media(max-width: 480px){
     .contenido-superior{
