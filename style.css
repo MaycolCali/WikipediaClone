@@ -168,12 +168,12 @@ a{
 }
 
 .buscador-texto{
-    width: 70%;
+    width: 80%;
     line-height: 2.5rem;
     border: 0;   /*No muestra un borde*/
     flex-shrink: 0;
     outline: none;
-    padding: 0.8rem 9.6rem 0.8rem 1.2rem;
+    padding: 0.8rem 1rem 0.8rem 1rem;
 }
 
 .buscador:active {
@@ -181,10 +181,10 @@ a{
 }
 
 .abrir-lenguajes {
-    width: 30%;
+    width: 20%;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
-    left: 1rem;
+    left: 1em;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -195,7 +195,7 @@ a{
 
 .mostrar-lenguaje {
     justify-self: left;
-    width: 2rem;
+    width: 1.5rem;
     font-size: 1.2rem;
     color: var(--color-subtitulos);
 
@@ -236,7 +236,8 @@ a{
 }
 
 .container-boton-idiomas {
-    width: 30rem;
+    width: 100%;
+    max-width: 30rem;
     height: 4.6rem;
     padding: .6rem 1.2rem;
     display: flex;
@@ -247,7 +248,7 @@ a{
 }
 
 .boton-idiomas {
-    width: 27.2rem;
+    width: 100%;
     height: 3.6rem;
     padding: .6rem 1.2rem;
     display: flex;
