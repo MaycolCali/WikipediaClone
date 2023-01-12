@@ -34,6 +34,9 @@ a{
 
 .seccion-principal{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .contenido-superior{
@@ -150,7 +153,7 @@ a{
 .caja-buscador{
     width: 100%;
     max-width: 45.5rem;
-    height: 6.2rem;
+    height: 5.5rem;
     display: flex;
     justify-content: center;
     align-items: center;

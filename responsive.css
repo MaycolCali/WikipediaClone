@@ -26,7 +26,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        order: 0;
     }
     .logoWik{
         display: initial; /*Para visualizarlo*/
@@ -51,15 +50,15 @@
     .contenido-central{
         width: auto;
         height: auto;
-        margin-top: 9.5rem;
+        margin-top: 5.5rem;
         font-size: 1.3rem;
         text-align: left;  
         display: block;    
-        padding: 0 2.5em; 
-        margin-bottom: 43rem;
+        padding: 0 1em; 
+        margin-bottom: 40rem;
     }
     .contenido-central_lang{
-        display: block;
+        display: block; 
         flex-wrap: wrap;
         float: left;
         position: relative;
@@ -78,15 +77,32 @@
     }
     .caja-buscador{
         margin-top: 0;
-        height: 7.8rem;
+        height: 5.8rem;
         position: absolute;
-        top: 12rem;
+        top: 100px;
         left: 0;
         right: 0;
         display: flex;
-        width: 80%;
+        width: 90%;
         max-width: 100%;
         padding: 0;
         text-align: left;
+    }
+    .icono{
+        padding-right: 2.2rem;
+    }
+}
+@media(max-width: 260px){
+    .contenido-central{
+        margin-bottom: 2rem;
+        min-height: 85rem;
+    }
+    .contenido-central_lang{
+        width: 90%;
+        display: block; 
+        flex-wrap: wrap;
+        float: none;
+        text-align: center;
+        align-items: center;
     }
 }
