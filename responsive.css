@@ -55,7 +55,8 @@
         text-align: left;  
         display: block;    
         padding: 0 1em; 
-        margin-bottom: 40rem;
+        margin-bottom: 4rem;
+        order: 3;
     }
     .contenido-central_lang{
         display: block; 
@@ -72,17 +73,14 @@
         padding: 0 1.6rem;
         text-align: center;
     }
-    .middle{
+    .logo_middle{
         display: none;
     }
     .caja-buscador{
         margin-top: 0;
         height: 5.8rem;
-        position: absolute;
-        top: 100px;
-        left: 0;
-        right: 0;
         display: flex;
+        order: 1;
         width: 90%;
         max-width: 100%;
         padding: 0;

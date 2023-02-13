@@ -25,6 +25,9 @@ html{
 }
 
 body{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -32,20 +35,27 @@ a{
     text-decoration: none;
 }
 
-.seccion-principal{
-    width: 100%;
+.principal{
     display: flex;
     flex-direction: column;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.section-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
 
 }
 
-.contenido-superior{
-    width: auto;
-    height: 9rem;
-    margin: 2rem 0 0;  /*x, y, separacion con el contenido de abajo*/
+.section-principal .contenido-superior{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    font-size: 0.8rem;
 }
 .logoWik{
     display: none; /*Para ponerlo invisible*/
@@ -66,69 +76,76 @@ a{
     font-weight: 400; /*Grosor de las letras*/
     line-height: 3.5rem; /*Interlineado*/
 }
+.section-principal .contenido-superior{
+    display: flex;
+    flex-direction: row;
+}
 
 .contenido-central{
-    position: relative;
-    width: 54.6rem;
-    height: 32.5rem;
-    max-width: 100%;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 11rem);
+    align-items: center;
+    justify-content: center;
     text-align: center;
-}
-.contenido-central_lang{
-    position: absolute;
-    width: 15.6em;
-    cursor: pointer;
+    font-size: 1.1rem;
 }
 .contenido-central_lang:hover{
     background: #EAECF0;
 }
-.contenido-central_lang-1{
-    top: 0;
-    right: 60%;
+
+.contenido-central div{
+    justify-self: center;
 }
-.contenido-central_lang-2{
-    top: 0;
-    left: 60%;
+.contenido-central .middle{
+    width: 13rem;
+    height: 12rem;
+    grid-column: 2/3;
+    grid-row: 1/6;
+    justify-self: center;
+    display: block;
 }
-.contenido-central_lang-3{
-    top: 20%;
-    right: 70%;
-}
-.contenido-central_lang-4{
-    top: 20%;
-    left: 70%;
-}
-.contenido-central_lang-5{
-    top: 40%;
-    right: 72%;
-}
-.contenido-central_lang-6{
-    top: 40%;
-    left: 72%;
-}
-.contenido-central_lang-7{
-    top: 60%;
-    right: 70%;
-}
-.contenido-central_lang-8{
-    top: 60%;
-    left: 70%;
-}
-.contenido-central_lang-9{
-    top: 80%;
-    right: 60%;
-}
-.contenido-central_lang-10{
-    top: 80%;
-    left: 60%;
+.contenido-central .logo_middle{
+    width: 100%;
+    height: 100%;
 }
 
+.contenido-central div:nth-child(2){
+    justify-self: start;
+    margin-right: 1.5rem;
+}
+.contenido-central div:nth-child(11){
+    justify-self: start;
+    margin-left: .5rem;
 
-.middle img{
-    width: 20em;
-    height: auto;
-    padding-top: 60px;
+}
+.contenido-central div:nth-child(5){
+    justify-self: start;
+    margin-left: .5rem;
+
+}
+.contenido-central div:nth-child(7){
+    justify-self: end;
+    margin-right: 1rem;
+
+}
+.contenido-central div:nth-child(3),
+.contenido-central div:nth-child(8){
+    margin-right: 1.5rem;
+
+}
+.contenido-central div:nth-child(4),
+.contenido-central div:nth-child(9){
+    margin-left: 2rem;
+
+}
+.contenido-central div:first-child{
+    justify-self: end;
+
+}
+.contenido-central div:nth-child(10){
+    justify-self: end;
+    margin-right: .1rem;
+
 }
 
 .contenido-central_lenguaje{
